@@ -1,0 +1,81 @@
+body {
+  --color-white-0: #ffffff;
+
+  --color-blue-050: #f9fafb;
+  --color-blue-100: #f3f4f6;
+  --color-blue-200: #cce0ff;
+  --color-blue-400: #4c94ff;
+  --color-blue-500: #1975ff;
+  --color-blue-700: #0052cc;
+
+  --color-black-700: #344051;
+  --color-black-900: #141c24;
+
+  --color-red-200: #ff9696;
+  --color-red-400: #f55a5a;
+  --color-red-500: #f64c4c;
+
+  --color-gray-050: #eff0f1;
+  --color-gray-300: #e3e5e5;
+  --color-gray-400: #ced2da;
+  --color-gray-500: #97a1af;
+  --color-gray-800: #637083;
+
+  --color-purple-100: #f1d8f9;
+  --color-purple-300: #e2a4ff;
+  --color-purple-500: #b345e6;
+  --color-purple-600: #9534d2;
+  --color-purple-700: #712d9c;
+
+  --color-dark-blue-300: #b2b9fd;
+  --color-dark-blue-500: #4656e9;
+
+  --color-green-100: #ecf9f2;
+  --color-green-400: #4ecf53;
+  --color-green-500: #40bf7f;
+  --color-green-700: #309161;
+
+  --color-yellow-400: #fffbec;
+  --color-yellow-500: #fdd442;
+  --color-yellow-700: #d1a300;
+
+  --color-orange-400: #fff9eb;
+  --color-orange-500: #ffb219;
+  --color-orange-700: #cc8800;
+
+  --color-violet-050: #f5f5f8;
+
+  --color-brand: #1975ff;
+
+  --color-text-invert: #ffffff;
+  --color-text-primary: #141c24;
+  --color-text-secondary: #344051;
+  --color-text-tertiary: #637083;
+  --color-text-quartenery: #97a1af;
+  --color-text-error: #f64c4c;
+  --color-text-brand: #1975ff;
+  --color-text-brand-disabled: #cce0ff;
+
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f3f4f6;
+  --color-background-tertiary: #f9fafb;
+  --color-background-disabled: #f3f4f6;
+  --color-background-brand: #1975ff;
+  --color-background-pressed-primary: #1975ff;
+  --color-background-hover-primary: #0052cc;
+  --color-background-brand-extralight: #cce0ff;
+
+  --color-border-extra-light: #e3e5e5;
+  --color-border-light: #ced2da;
+  --color-border-medium: #97a1af;
+
+  --color-indicator-focused: #4c94ff;
+  --color-indicator-focused-alternative: #cce0ff;
+  --color-indicator-white: #ffffff;
+  --color-indicator-light: #ced2da;
+  --color-indicator-medium: #97a1af;
+  --color-indicator-normal: #141c24;
+  --color-indicator-error: #f64c4c;
+  --color-indicator-attention: #ffb219;
+  --color-indicator-positive: #40bf7f;
+}

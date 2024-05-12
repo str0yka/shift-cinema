@@ -1,0 +1,88 @@
+.title {
+  &.h1 {
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  &.h2 {
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &.h3 {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.button {
+  &.medium {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  &.semibold {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.paragraph16 {
+  &.regular {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &.medium {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &.underline {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+}
+
+.paragraph14 {
+  &.regular {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &.medium {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &.underline {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+}
+
+.paragraph12 {
+  &.regular {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &.medium {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  &.underline {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+}
