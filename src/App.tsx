@@ -1,58 +1,7 @@
-import { Button } from './components/ui';
+import { useGetTodo } from './utils/api';
 
-export const App = () => (
-  <>
-    <Button
-      color="primary"
-      variant="contained"
-    >
-      Button
-    </Button>
-    <Button
-      color="primary"
-      variant="contained"
-      disabled
-    >
-      Button
-    </Button>
-    <Button
-      color="primary"
-      variant="text"
-    >
-      Button
-    </Button>
-    <Button
-      color="primary"
-      variant="text"
-      disabled
-    >
-      Button
-    </Button>
-    <Button
-      color="secondary"
-      variant="contained"
-    >
-      Button
-    </Button>
-    <Button
-      color="secondary"
-      variant="contained"
-      disabled
-    >
-      Button
-    </Button>
-    <Button
-      color="secondary"
-      variant="text"
-    >
-      Button
-    </Button>
-    <Button
-      color="secondary"
-      variant="text"
-      disabled
-    >
-      Button
-    </Button>
-  </>
-);
+export const App = () => {
+  const { data } = useGetTodo({ params: { id: 1 } });
+
+  return <code>{JSON.stringify(data)}</code>;
+};

@@ -14,6 +14,9 @@ export const buildPlugins = (options: BuildOptions): webpack.Configuration['plug
     new HtmlWebpackPlugin({
       template: path.resolve(options.paths.public, 'index.html'),
     }),
+    new webpack.DefinePlugin({
+      'process.env.API_URL': JSON.stringify(process.env.API_URL),
+    }),
   ];
 
   if (isProd) {

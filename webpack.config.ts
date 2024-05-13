@@ -1,7 +1,11 @@
 import path from 'path';
 
+import dotenv from 'dotenv';
+
 import { buildWebpack } from './config/build/buildWebpack';
 import { BuildMode } from './config/build/types/types';
+
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 interface EnvVariables {
   mode?: BuildMode;

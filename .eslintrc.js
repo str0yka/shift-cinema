@@ -31,7 +31,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'jsx-a11y', 'promise', 'react-refresh'],
+  plugins: ['react', 'jsx-a11y', 'promise', 'react-refresh', 'simple-import-sort'],
   rules: {
     'react/button-has-type': 0,
     'react/display-name': 0,
@@ -49,6 +49,11 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/prefer-default-export': 0,
     'import/extensions': 0,
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
     'react/function-component-definition': [
       2,
       {
