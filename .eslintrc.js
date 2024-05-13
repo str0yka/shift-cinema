@@ -1,5 +1,17 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript', 'prettier', 'eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:import/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking', 'plugin:storybook/recommended'],
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'airbnb-typescript',
+    'prettier',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:import/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    // 'plugin:storybook/recommended',
+  ],
   env: {
     browser: true,
     es2021: true,
@@ -21,6 +33,8 @@ module.exports = {
   },
   plugins: ['react', 'jsx-a11y', 'promise', 'react-refresh'],
   rules: {
+    'react/button-has-type': 0,
+    'react/display-name': 0,
     'consistent-return': 1,
     'jsx-a11y/label-has-associated-control': 0,
     'react-hooks/exhaustive-deps': 0,

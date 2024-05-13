@@ -1,0 +1,89 @@
+.button {
+  border-radius: 32px;
+  padding: 16px 32px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+
+  &.primary {
+    &.contained {
+      background-color: var(--color-background-brand);
+      color: var(--color-text-invert);
+
+      &:hover {
+        background-color: var(--color-background-hover-primary);
+      }
+
+      &:active {
+        background-color: var(--color-background-brand);
+        outline: 2px solid var(--color-indicator-focused-alternative);
+        outline-offset: -2px;
+      }
+
+      &:disabled {
+        background-color: var(--color-background-brand-extra-light);
+      }
+    }
+
+    &.text {
+      background-color: transparent;
+      color: var(--color-text-brand);
+
+      &:hover {
+        background-color: var(--color-background-secondary);
+      }
+
+      &:active {
+        background-color: var(--color-background-primary);
+        outline: 2px solid var(--color-indicator-focused-alternative);
+        outline-offset: -2px;
+      }
+
+      &:disabled {
+        background-color: transparent;
+        outline: 2px solid var(--color-indicator-focused-alternative);
+        outline-offset: -2px;
+        color: var(--color-text-brand-disabled);
+      }
+    }
+  }
+
+  &.secondary {
+    &.contained {
+      background-color: transparent;
+      border: 1px solid var(--color-border-light);
+      color: var(--color-text-secondary);
+
+      &:hover {
+        background-color: var(--color-background-tertiary);
+      }
+
+      &:active {
+        background-color: var(--color-background-primary);
+      }
+
+      &:disabled {
+        background-color: transparent;
+        border: 1px solid var(--color-border-extra-light);
+        color: var(--color-text-tertiary);
+      }
+    }
+
+    &.text {
+      color: var(--color-text-secondary);
+
+      &:hover {
+        background-color: var(--color-background-tertiary);
+      }
+
+      &:active {
+        background-color: var(--color-background-primary);
+      }
+
+      &:disabled {
+        background-color: transparent;
+        color: var(--color-text-tertiary);
+      }
+    }
+  }
+}

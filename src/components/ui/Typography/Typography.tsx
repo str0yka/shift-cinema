@@ -4,42 +4,40 @@ import React from 'react';
 import s from './Typography.module.css';
 
 type TypographyComponents = 'h1' | 'h2' | 'h3' | 'p' | 'span';
-type TypographyVariants = {
-  title: 'h1' | 'h2' | 'h3';
-  button: 'medium' | 'semibold';
-  paragraph16: 'regular' | 'medium' | 'underline';
-  paragraph14: 'regular' | 'medium' | 'underline';
-  paragraph12: 'regular' | 'medium' | 'underline';
-};
+type TypographyVariants =
+  | 'title.h1'
+  | 'title.h2'
+  | 'title.h3'
+  | 'button.medium'
+  | 'button.semibold'
+  | 'paragraph16.regular'
+  | 'paragraph16.medium'
+  | 'paragraph16.underline'
+  | 'paragraph14.regular'
+  | 'paragraph14.medium'
+  | 'paragraph14.underline'
+  | 'paragraph12.regular'
+  | 'paragraph12.medium'
+  | 'paragraph12.underline';
 
-interface TypographyProps<
-  Component extends TypographyComponents,
-  Variant extends keyof TypographyVariants,
-> {
+interface TypographyProps<Component extends TypographyComponents> {
   component?: Component;
-  variant?: `${Variant}.${TypographyVariants[Variant]}`;
+  variant?: TypographyVariants;
 }
 
 const DEFAULT_COMPONENT: TypographyComponents = 'span';
-const DEFAULT_VARIANT: `${keyof TypographyVariants}.${TypographyVariants[keyof TypographyVariants]}` =
-  'paragraph16.regular';
+const DEFAULT_VARIANT: TypographyVariants = 'paragraph16.regular';
 
-export const Typography = <
-  Variant extends keyof TypographyVariants,
-  Component extends TypographyComponents,
->({
+export const Typography = <Component extends TypographyComponents>({
   component,
   variant,
   className,
   ...props
-}: TypographyProps<Component, Variant> & React.ComponentProps<Component>) => {
-  const [type, style] = (variant ?? DEFAULT_VARIANT).split('.') as [
-    Variant,
-    TypographyVariants[Variant],
-  ];
+}: TypographyProps<Component> & React.ComponentProps<Component>) => {
+  const [type, style] = (variant ?? DEFAULT_VARIANT).split('.');
 
   return React.createElement(component ?? DEFAULT_COMPONENT, {
-    className: clsx(s[type], s[style], className),
+    className: clsx(s[type as keyof typeof s], s[style as keyof typeof s], className),
     ...props,
   });
 };

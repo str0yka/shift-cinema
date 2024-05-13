@@ -1,90 +1,58 @@
-import { Typography } from './components/ui';
+import { Button } from './components/ui';
 
 export const App = () => (
   <>
-    <Typography
-      component="p"
-      variant="title.h1"
+    <Button
+      color="primary"
+      variant="contained"
     >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="title.h2"
+      Button
+    </Button>
+    <Button
+      color="primary"
+      variant="contained"
+      disabled
     >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="title.h3"
+      Button
+    </Button>
+    <Button
+      color="primary"
+      variant="text"
     >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="button.medium"
+      Button
+    </Button>
+    <Button
+      color="primary"
+      variant="text"
+      disabled
     >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="button.semibold"
+      Button
+    </Button>
+    <Button
+      color="secondary"
+      variant="contained"
     >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph16.regular"
+      Button
+    </Button>
+    <Button
+      color="secondary"
+      variant="contained"
+      disabled
     >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph16.medium"
+      Button
+    </Button>
+    <Button
+      color="secondary"
+      variant="text"
     >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph16.underline"
+      Button
+    </Button>
+    <Button
+      color="secondary"
+      variant="text"
+      disabled
     >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph14.regular"
-    >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph14.medium"
-    >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph14.underline"
-    >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph12.regular"
-    >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph12.medium"
-    >
-      hello world
-    </Typography>
-    <Typography
-      component="p"
-      variant="paragraph12.underline"
-    >
-      hello world
-    </Typography>
+      Button
+    </Button>
   </>
 );

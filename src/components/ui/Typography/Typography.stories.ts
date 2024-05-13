@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
+
 import { Typography } from './Typography';
 
 const meta = {
@@ -69,60 +69,70 @@ export const ButtonMedium: Story = {
     variant: 'button.medium',
   },
 };
+
 export const ButtonSemibold: Story = {
   name: 'Button/Semibold',
   args: {
     variant: 'button.semibold',
   },
 };
+
 export const Paragraph16Regular: Story = {
   name: 'Paragraph/16/Regular',
   args: {
     variant: 'paragraph16.regular',
   },
 };
+
 export const Paragraph16Medium: Story = {
   name: 'Paragraph/16/Medium',
   args: {
     variant: 'paragraph16.medium',
   },
 };
+
 export const Paragraph16Underline: Story = {
   name: 'Paragraph/16/Underline',
   args: {
     variant: 'paragraph16.underline',
   },
 };
+
 export const Paragraph14Regular: Story = {
   name: 'Paragraph/14/RegularH1',
   args: {
     variant: 'paragraph14.regular',
   },
 };
+
 export const Paragraph14Medium: Story = {
   name: 'Paragraph/14/Medium',
   args: {
     variant: 'paragraph14.medium',
   },
 };
+
 export const Paragraph14Underline: Story = {
   name: 'Paragraph/14/Underline',
   args: {
     variant: 'paragraph14.underline',
   },
 };
+
 export const Paragraph12Regular: Story = {
   name: 'Paragraph/12/Regular',
   args: {
     variant: 'paragraph12.regular',
   },
 };
+
 export const Paragraph12Medium: Story = {
   name: 'Paragraph/12/Medium',
   args: {
     variant: 'paragraph12.medium',
   },
 };
+
 export const Paragraph12Underline: Story = {
   name: 'Paragraph/12/Underline',
   args: {
