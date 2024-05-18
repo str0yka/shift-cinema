@@ -5,7 +5,7 @@ import { Typography } from '../Typography/Typography';
 
 import s from './Input.module.css';
 
-interface InputProps extends React.ComponentProps<'input'> {
+interface InputProps extends React.ComponentPropsWithoutRef<'input'> {
   error?: boolean;
   label?: string;
   hint?: string;

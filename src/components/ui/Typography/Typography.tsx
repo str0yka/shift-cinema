@@ -45,7 +45,7 @@ export const Typography = <Component extends TypographyComponent>({
   color = DEFAULT_COLOR,
   className,
   ...props
-}: TypographyProps<Component> & React.ComponentProps<Component>) => {
+}: TypographyProps<Component> & React.ComponentPropsWithoutRef<Component>) => {
   const [type, style] = variant.split('.') as (keyof typeof s)[];
 
   return React.createElement(component ?? DEFAULT_COMPONENT, {

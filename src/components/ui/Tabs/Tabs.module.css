@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  padding: 2px;
+  border-radius: 16px;
+  background-color: var(--color-background-secondary);
+}
+
+.trigger {
+  flex-grow: 1;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-text-tertiary);
+
+  &.active {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+  }
+}
