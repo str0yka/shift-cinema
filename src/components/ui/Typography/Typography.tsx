@@ -3,8 +3,8 @@ import React from 'react';
 
 import s from './Typography.module.css';
 
-type TypographyComponents = 'h1' | 'h2' | 'h3' | 'p' | 'span';
-type TypographyVariants =
+type TypographyComponent = 'h1' | 'h2' | 'h3' | 'p' | 'span';
+type TypographyVariant =
   | 'title.h1'
   | 'title.h2'
   | 'title.h3'
@@ -19,25 +19,37 @@ type TypographyVariants =
   | 'paragraph12.regular'
   | 'paragraph12.medium'
   | 'paragraph12.underline';
+type TypographyColor =
+  | 'invert'
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'quartenery'
+  | 'error'
+  | 'brand'
+  | 'brand-disabled';
 
-interface TypographyProps<Component extends TypographyComponents> {
+interface TypographyProps<Component extends TypographyComponent> {
   component?: Component;
-  variant?: TypographyVariants;
+  variant?: TypographyVariant;
+  color?: TypographyColor;
 }
 
-const DEFAULT_COMPONENT: TypographyComponents = 'span';
-const DEFAULT_VARIANT: TypographyVariants = 'paragraph16.regular';
+const DEFAULT_COMPONENT: TypographyComponent = 'span';
+const DEFAULT_VARIANT: TypographyVariant = 'paragraph16.regular';
+const DEFAULT_COLOR: TypographyColor = 'primary';
 
-export const Typography = <Component extends TypographyComponents>({
+export const Typography = <Component extends TypographyComponent>({
   component,
-  variant,
+  variant = DEFAULT_VARIANT,
+  color = DEFAULT_COLOR,
   className,
   ...props
 }: TypographyProps<Component> & React.ComponentProps<Component>) => {
-  const [type, style] = (variant ?? DEFAULT_VARIANT).split('.');
+  const [type, style] = variant.split('.') as (keyof typeof s)[];
 
   return React.createElement(component ?? DEFAULT_COMPONENT, {
-    className: clsx(s[type as keyof typeof s], s[style as keyof typeof s], className),
+    className: clsx(s[type], s[style], s[color], className),
     ...props,
   });
 };

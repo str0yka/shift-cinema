@@ -86,3 +86,35 @@
     text-decoration: underline;
   }
 }
+
+.invert {
+  color: var(--color-text-invert);
+}
+
+.primary {
+  color: var(--color-text-primary);
+}
+
+.secondary {
+  color: var(--color-text-secondary);
+}
+
+.tertiary {
+  color: var(--color-text-tertiary);
+}
+
+.quartenery {
+  color: var(--color-text-quartenery);
+}
+
+.error {
+  color: var(--color-text-error);
+}
+
+.brand {
+  color: var(--color-text-brand);
+}
+
+.brand-disabled {
+  color: var(--color-text-brand-disabled);
+}

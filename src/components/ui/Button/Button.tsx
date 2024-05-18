@@ -3,12 +3,12 @@ import { forwardRef } from 'react';
 
 import s from './Button.module.css';
 
-type ButtonColors = 'primary' | 'secondary';
-type ButtonVariants = 'contained' | 'text';
+type ButtonColor = 'primary' | 'secondary';
+type ButtonVariant = 'contained' | 'text';
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
-  variant?: ButtonVariants;
-  color?: ButtonColors;
+  color?: ButtonColor;
+  variant?: ButtonVariant;
 }
 
 export const Button = forwardRef<React.ElementRef<'button'>, ButtonProps>(
