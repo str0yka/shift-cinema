@@ -47,7 +47,7 @@ export const TitleH3: Story = {
 export const ButtonMedium: Story = {
   name: 'Button/Medium',
   args: {
-    variant: 'button.medium',
+    variant: 'button.default',
   },
 };
 

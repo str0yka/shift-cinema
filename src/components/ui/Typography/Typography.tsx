@@ -8,7 +8,7 @@ type TypographyVariant =
   | 'title.h1'
   | 'title.h2'
   | 'title.h3'
-  | 'button.medium'
+  | 'button.default'
   | 'button.semibold'
   | 'paragraph16.regular'
   | 'paragraph16.medium'
