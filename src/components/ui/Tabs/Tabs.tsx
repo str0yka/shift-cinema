@@ -6,19 +6,21 @@ import { TabsProvider, useTabs, useTabsSetter } from './contexts';
 
 interface TabsListProps extends React.ComponentPropsWithoutRef<'div'> {}
 
-const TabsList = forwardRef<HTMLDivElement, TabsListProps>(({ className, ...props }, ref) => (
-  <div
-    {...props}
-    ref={ref}
-    className={clsx(s.list, className)}
-  />
-));
+const TabsList = forwardRef<React.ComponentRef<'div'>, TabsListProps>(
+  ({ className, ...props }, ref) => (
+    <div
+      {...props}
+      ref={ref}
+      className={clsx(s.list, className)}
+    />
+  ),
+);
 
 interface TabsTriggerProps extends React.ComponentPropsWithoutRef<'button'> {
   value: string;
 }
 
-const TabsTrigger = forwardRef<HTMLButtonElement, TabsTriggerProps>(
+const TabsTrigger = forwardRef<React.ComponentRef<'button'>, TabsTriggerProps>(
   ({ value, type, className, onClick, ...props }, ref) => {
     const tab = useTabs();
     const setTab = useTabsSetter();

@@ -1,0 +1,4 @@
+body {
+  --media-min-width-tablet: 640px;
+  --media-min-width-desktop: 980px;
+}

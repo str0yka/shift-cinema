@@ -1,5 +1,6 @@
 import path from 'path';
 
+import CopyPlugin from 'copy-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
@@ -16,6 +17,14 @@ export const buildPlugins = (options: BuildOptions): webpack.Configuration['plug
     }),
     new webpack.DefinePlugin({
       'process.env.API_URL': JSON.stringify(process.env.API_URL),
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(options.paths.public, 'images'),
+          to: path.resolve(options.paths.output, 'images'),
+        },
+      ],
     }),
   ];
 

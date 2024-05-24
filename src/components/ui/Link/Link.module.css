@@ -1,0 +1,38 @@
+.link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.primary {
+  color: var(--color-background-brand);
+
+  &:hover {
+    color: var(--color-background-hover-primary);
+  }
+
+  &:active {
+    color: var(--color-background-pressed-primary);
+  }
+
+  &:disabled {
+    color: var(--color-background-brand-extra-light);
+  }
+}
+
+.secondary {
+  color: var(--color-text-secondary);
+
+  &:hover {
+    color: var(--color-text-primary);
+  }
+
+  &:active {
+    color: var(--color-text-secondary);
+  }
+
+  &:disabled {
+    color: var(--color-text-tertiary);
+  }
+}

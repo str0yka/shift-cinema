@@ -11,7 +11,7 @@ interface InputProps extends React.ComponentPropsWithoutRef<'input'> {
   hint?: string;
 }
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(
+export const Input = forwardRef<React.ComponentRef<'input'>, InputProps>(
   ({ error, hint, label, type = 'text', className, ...props }, ref) => (
     <label className={s.container}>
       {label && (

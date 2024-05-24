@@ -1,0 +1,18 @@
+.wrapper {
+  height: 72px;
+  background-color: var(--color-background-primary);
+  border-bottom: 1px solid var(--color-border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  width: 164px;
+}

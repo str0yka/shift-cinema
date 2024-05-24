@@ -33,6 +33,7 @@ module.exports = {
   },
   plugins: ['react', 'jsx-a11y', 'promise', 'react-refresh', 'simple-import-sort'],
   rules: {
+    'import/no-unresolved': 0,
     'react/button-has-type': 0,
     'react/display-name': 0,
     'consistent-return': 1,

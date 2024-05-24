@@ -11,7 +11,7 @@ interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   variant?: ButtonVariant;
 }
 
-export const Button = forwardRef<React.ElementRef<'button'>, ButtonProps>(
+export const Button = forwardRef<React.ComponentRef<'button'>, ButtonProps>(
   ({ variant = 'contained', color = 'primary', className, ...props }, ref) => (
     <button
       ref={ref}
